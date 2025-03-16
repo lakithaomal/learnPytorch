@@ -45,8 +45,16 @@ test_dataset_path  = "../data/version2/test"
 train_dataset      = datasets.ImageFolder(train_dataset_path)
 ```
 
-
-
-
-
 - Custom Class 
+
+This inherits from Dataset class
+`class CustomDataset(Dataset)`
+
+In PyTorch, Dataset is a base class that you can inherit from to create custom datasets. It defines how data is accessed and allows you to work with data that doesn’t fit into standard formats (like image folders, CSVs, databases, etc.).
+
+   - Why Inherit from Dataset?
+      By inheriting from Dataset, your CustomDataset becomes compatible with   PyTorch utilities like:
+      
+      DataLoader – for batching, shuffling, and loading data in parallel.
+      Any model training loop that expects PyTorch dataset behavior.
+
