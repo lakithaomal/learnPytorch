@@ -9,6 +9,8 @@ Some usefule commands
 `!nvidia-smi`
 - nvidia-smi is a command-line tool provided by NVIDIA that shows the status of your GPU(s).
 - The ! tells the notebook to run it as a shell command instead of Python code.
+![image](https://github.com/user-attachments/assets/51ae6790-7aa7-404b-92fd-bab53a31a994)
+
 
 
 ## The Data Set 
