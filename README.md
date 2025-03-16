@@ -11,9 +11,13 @@ Some usefule commands
 - The ! tells the notebook to run it as a shell command instead of Python code.
 ![image](https://github.com/user-attachments/assets/51ae6790-7aa7-404b-92fd-bab53a31a994)
 
-
-
 ## The Data Set 
 The data set is a collection of images with 7 classes. With dedicated training and testing classes. 
 
 ![image](https://github.com/user-attachments/assets/3c5574ba-5bdf-4b15-997a-a4595f14a211)
+
+## Accessing your google drive from colab 
+```
+from google.colab import drive
+drive.mount('/content/drive/')
+```
