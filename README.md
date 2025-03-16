@@ -16,8 +16,37 @@ The data set is a collection of images with 7 classes. With dedicated training a
 
 ![image](https://github.com/user-attachments/assets/3c5574ba-5bdf-4b15-997a-a4595f14a211)
 
+We have 2 versions just to have a smaller data set for training and debugging purposes. 
+
+
 ## Accessing your google drive from colab 
 ```
 from google.colab import drive
 drive.mount('/content/drive/')
 ```
+
+## Data Processing 
+There are two ways to load  the images 
+- ImageFolder: `torchvision.datasets.imageFolder(root,transform,target_transform,loader,is_valid_file)
+  - root (string): root directory  --> Mandotory 
+  - transform: function to take PIL Image nad transform
+  - target_transform: a funcion that takes target and tramsform it  
+  - loader: function to load 
+  - is_valid_file: sees if its a valid file 
+
+Eg: 
+```
+from torchvision import datasets, transforms
+from torch.utils.data import DataLoader
+
+train_dataset_path = "../data/version2/train"
+test_dataset_path  = "../data/version2/test"
+
+train_dataset      = datasets.ImageFolder(train_dataset_path)
+```
+
+
+
+
+
+- Custom Class 
