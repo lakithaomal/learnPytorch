@@ -58,3 +58,8 @@ In PyTorch, Dataset is a base class that you can inherit from to create custom d
       DataLoader – for batching, shuffling, and loading data in parallel.
       Any model training loop that expects PyTorch dataset behavior.
 
+# Lenet-5 Architecture 
+
+
+
+
