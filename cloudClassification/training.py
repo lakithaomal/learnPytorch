@@ -70,7 +70,7 @@ class_weights = [total_count / label_counts[i] for i in range(len(label_counts))
 class_weights_tensor = torch.tensor(class_weights, dtype=torch.float)
 
 criterion = nn.CrossEntropyLoss(weight=class_weights_tensor)
-optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
+optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9) # Sochastic Gradient Descent 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 model = model.to(device)
